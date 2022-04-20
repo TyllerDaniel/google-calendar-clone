@@ -2,7 +2,7 @@ import dayjs from 'dayjs'
 import React, { useContext, useEffect, useState } from 'react'
 import GlobalContext from '../context/GlobalContext'
 import { getMonth } from '../util'
-import CreateEventButton from './CreateEventButton'
+
 
 
 export default function SmallCalendar() {
@@ -30,9 +30,9 @@ export default function SmallCalendar() {
         const currDay = day.format(format)
         const slcDay = daySelected && daySelected.format(format)
         if(newDay === currDay){
-            return'bg-blue-500 rounded-full text-white';
+            return'bg-yellow-300 rounded-full text-white font-bold';
         } else if(currDay === slcDay){
-            return 'bg-blue-100 rounded-full text-blue-600 font-bold';
+            return 'bg-yellow-100 rounded-full text-gray-500 font-bold';
         } else {
             return '';
         }

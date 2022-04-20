@@ -10,6 +10,6 @@ export default function CreateEventButton() {
         <img src="https://raw.githubusercontent.com/3stbn/google-calendar-clone/master/src/assets/plus.svg" alt="create-event" className='w-7 h-7' />
         <span className='pl-3 pr-7'>Create</span>
     </button>
-  )
+  );
 }
 
